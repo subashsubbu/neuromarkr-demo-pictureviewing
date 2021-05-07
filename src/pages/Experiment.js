@@ -5,14 +5,14 @@ import { skipUntil, takeUntil, reduce } from "rxjs/operators";
 
 import { notion, useNotion } from "../services/notion";
 import { Nav } from "../components/Nav";
-import studyData from "../studies/lpp";
+import studyData from "../studies/pictureviewing";
 
 const study = window.lab.util.fromObject(studyData)
 
 export function Experiment() {
   const { user } = useNotion();
   const [brainwaves, setBrainwaves] = useState(null);
-
+  
   useEffect(() => {
     if (!user) {
       navigate("/login");
