@@ -10,6 +10,6 @@
 - As of Fall, 2020 ```lab.js``` does not support callbacks for stimulus events (the only callbacks supported are ```prepare```, ```run```, ```end```, and ```commit```; [see documentation](https://labjs.readthedocs.io/en/latest/reference/core.html)), making it impossible to inject markers via notion-js's ```addMarker``` capability. Adding markers would be ideal for this event-related potential measurement project, but for the moment the recordings are simply "bookended" at the task start and end times, and events must be matched up using the ```lab.js``` output CSV file. An alternative library that DOES support event callbacks is [jsPsych](https://www.jspsych.org/overview/callbacks/).
 
 
-# Getting Started
+# Getting Started with
 - npm install
 - npm start
